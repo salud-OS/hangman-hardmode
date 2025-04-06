@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Hangman</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo_outline.gif" alt="Hangman" />
+    </header>
+    <div class="gameSpace">
+        <img class="hangman" src="img/hangman_10.gif"/>
+            <div class="gameState">
+                <ul id="word">
+                </ul>
+            <p id="guessesRemaining"></p>
+        </div>
+    </div>
+    <div class="keyboard">
+
+    </div>
+    <button id="gameReset">Reset Game</button>
+    <button id="github"><a href="https://github.com/salud-OS"><img src="img/github-mark-white.svg" height=30px width=30px alt="Go to Github profile"/></button>
+    <script src="hangman_game.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

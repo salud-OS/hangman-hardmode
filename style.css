@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-image: url("/img/background.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.logo {
+    padding-top: 20px;
+    width: 30em;
+}
+
+.gameSpace {
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 25px 25px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(59, 0, 0, 0.534);
+    display: flex;
+    gap: 30px;
+}
+
+.hangman {
+    height: 250px;
+    width: 250px;
+    float: left;
+}
+
+.gameState {
+    display: flex;
+    flex-direction: column;
+}
+
+#word {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-size: 35px;
+}
+
+#word li {
+    background-color: #f8ede0;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+#guessesRemaining {
+    text-align: center;
+    font-weight: bold;
+}
+
+.keyboard {
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 20px 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 5px 5px 15px rgba(59, 0, 0, 0.534);
+    width: 40%;
+}
+
+.keyboard button {
+    background-color: #ff7300;
+    border: 2px solid rgb(104, 10, 41);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 10px; 
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.keyboard button:hover {
+    background-color: #ffaa0d;
+}
+
+.keyboard button:active {
+    transform: translateY(4px)
+}
+
+.keyboard button:disabled {
+    background-color: #f1d092;
+    border: none;
+    cursor: not-allowed;
+}
+
+#gameReset {
+    background-color: #ff5411;
+    border: 2px solid black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em 1em;
+    border-radius: 10px; 
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(59, 0, 0, 0.534);
+}
+
+#gameReset:hover {
+    background-color: #ff8928
+}
+
+#gameReset:active {
+    transform: translateY(4px)
+}
+
+#github {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #000000;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(59, 0, 0, 0.534);
+}
+
+#github:hover {
+    background-color: #292a2c;
+}
