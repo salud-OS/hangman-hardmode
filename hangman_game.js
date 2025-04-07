@@ -74,7 +74,7 @@ function wordCheck(keyButton, guessLetter) {
 
 // update hangman img
 function hangmanUpdate(guessCount) {
-  document.querySelector(".hangman").src = "img/hangman_" + guessCount + ".gif";
+  document.querySelector(".hangman").src = "img/hangman_" + (guessCount+1) + ".gif";
 }
 
 // starts a new game when hit reset button
